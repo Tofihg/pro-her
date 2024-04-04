@@ -97,7 +97,7 @@ if(isset($message)){
 
 <div class="products">
 
-   <h1 class="heading">nieuwste producten</h1>
+   <h1 class="heading">Nieuwste producten</h1>
 
    <div class="box-container">
 
