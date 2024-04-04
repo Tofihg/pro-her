@@ -99,7 +99,7 @@ if (isset ($_GET['delete_all'])) {
             </span> </p>
          <div class="flex">
             <!-- <a href="login.php" class="btn">login</a>// -->
-            <a href="register.php" class="option-btn">register</a>
+            <a href="register.php" class="option-btn">Register</a>
             <a href="index.php?logout=<?php echo $user_id; ?>"
                onclick="return confirm('are your sure you want to logout?');" class="delete-btn">logout</a>
          </div>
@@ -108,7 +108,7 @@ if (isset ($_GET['delete_all'])) {
 
       <div class="products">
 
-         <h1 class="heading">nieuwste producten</h1>
+         <h1 class="heading">Nieuwste producten</h1>
 
          <div class="box-container">
 
@@ -145,7 +145,7 @@ if (isset ($_GET['delete_all'])) {
 
       <div class="shopping-cart">
 
-         <h1 class="heading">winkelwagen</h1>
+         <h1 class="heading">Winkelwagen</h1>
 
          <table>
             <thead>
