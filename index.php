@@ -88,7 +88,7 @@ if(isset($message)){
    <p> user naam : <span><?php echo $fetch_user['name']; ?></span> </p>
    <p> email : <span><?php echo $fetch_user['email']; ?></span> </p>
    <div class="flex">
-      <a href="login.php" class="btn">login</a>
+      <!-- <a href="login.php" class="btn">login</a> -->
       <!-- <a href="register.php" class="option-btn">register</a> -->
       <a href="index.php?logout=<?php echo $user_id; ?>" onclick="return confirm('are your sure you want to logout?');" class="delete-btn">logout</a>
    </div>
