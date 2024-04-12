@@ -14,8 +14,11 @@ class Pages extends Controller
 
   public function shopping()
   {
+    $this->productModel = $this->model('Product');
+
     $data = [
-      'title' => 'Shopping'
+      'title' => 'Shopping',
+      'products' => $this->productModel->getProducts()
     ];
 
     $this->view('pages/shopping', $data);

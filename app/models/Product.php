@@ -14,7 +14,8 @@ class Product
                         products.id as productId,
                         products.name as name,
                         products.price as price,
-                        products.image as image
+                        products.image as image,
+                        products.created_at as created_at
                         FROM products
                         ORDER BY products.id DESC
                         ');
