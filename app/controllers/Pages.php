@@ -12,13 +12,13 @@ class Pages extends Controller
     $this->view('pages/index', $data);
   }
 
-  public function about()
+  public function shopping()
   {
     $data = [
-      'title' => 'About Us'
+      'title' => 'Shopping'
     ];
 
-    $this->view('pages/about', $data);
+    $this->view('pages/shopping', $data);
   }
 
   public function test()

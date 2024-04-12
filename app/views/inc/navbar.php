@@ -15,7 +15,7 @@
                     <a class="nav-link" href="<?php echo URLROOT; ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">product</a>
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/pages/shopping">Shopping</a>
                 </li>
             </ul>
 
