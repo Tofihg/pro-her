@@ -15,14 +15,14 @@
                     <a class="nav-link" href="<?php echo URLROOT; ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/posts/index">Twitter</a>
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">product</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/cart">Cart</a>
+                </li>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo URLROOT; ?>/users/profile">My Profiel</a>

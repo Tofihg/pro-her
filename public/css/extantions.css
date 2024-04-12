@@ -432,7 +432,7 @@ a:link {
 .open .dropdown-toggle.btn-danger {
   color: #ff0000;
   background-color: black;
-  border-color: #ff0000 ;
+  border-color: #ff0000;
 }
 
 .btn-warning {
@@ -448,7 +448,7 @@ a:link {
 .open .dropdown-toggle.btn-warning {
   color: green;
   background-color: black;
-  border-color: gainsboro ;
+  border-color: gainsboro;
 }
 
 
@@ -459,10 +459,10 @@ a:link {
   border-color: white;
 }
 
-.active{
+.active {
   color: green;
   background-color: black;
-  border-color: gainsboro ;
+  border-color: gainsboro;
 }
 
 .btn-white:hover,
@@ -537,6 +537,7 @@ label {
   display: inline-block;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: normal;
+  font-weight: bold;
 }
 
 textarea {

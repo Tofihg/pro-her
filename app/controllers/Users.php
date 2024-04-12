@@ -34,7 +34,6 @@ class Users extends Controller
       // Init data
       $data = [
         'name' => trim($_POST['name']),
-        'username' => trim($_POST['name']) . $random_number,
         'email' => trim($_POST['email']),
         'password' => trim($_POST['password']),
         'confirm_password' => trim($_POST['confirm_password']),
@@ -186,7 +185,7 @@ class Users extends Controller
     // Init data
     $data = [
       'email' =>  $_SESSION['user_email'],
-      'username' =>   $_SESSION['user_name'],
+      'name' =>   $_SESSION['user_name'],
       'created_at' => '',
     ];
 
