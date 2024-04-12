@@ -2,6 +2,11 @@
 class Pages extends Controller
 {
 
+  public function __construct()
+  {
+    $this->productModel = $this->model('Product');
+  }
+
   public function index()
   {
     $data = [
@@ -14,8 +19,8 @@ class Pages extends Controller
 
   public function shopping()
   {
-    $this->productModel = $this->model('Product');
-
+    $this->createShoppingSession();
+    
     $data = [
       'title' => 'Shopping',
       'products' => $this->productModel->getProducts()
@@ -24,9 +29,10 @@ class Pages extends Controller
     $this->view('pages/shopping', $data);
   }
 
-  public function test()
+  private function createShoppingSession()
   {
-    echo 'test';
-    # code...
+    if (!isset($_SESSION['products']))
+      $_SESSION['products'] = [];
   }
+
 }

@@ -21,8 +21,13 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/cart">Cart</a>
-                </li>
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/cart">
+                        Cart
+                        <?php if (count($_SESSION['products']) != 0)
+                            echo count($_SESSION['products'])
+                                ?>
+                        </a>
+                    </li>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo URLROOT; ?>/users/profile">My Profiel</a>

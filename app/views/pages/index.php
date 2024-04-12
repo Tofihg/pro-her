@@ -11,7 +11,7 @@
     <p>easyCart is committed to providing you with the best online shopping experience. Our team is dedicated to
       offering a wide selection of high-quality products, seamless checkout processes, and excellent customer service.
     </p>
-    <img src="<?php echo URLROOT; ?>/public/img/about-us.jpg" class="img-fluid rounded mx-auto d-block" alt="About Us Image">
+    <img src="<?php echo URLROOT; ?>/img/about-us.jpg" class="img-fluid rounded mx-auto d-block" alt="About Us Image">
   </div>
 </section>
 
@@ -22,7 +22,7 @@
     <p>At easyCart, we understand that convenience, reliability, and affordability are essential when it comes to online
       shopping. That's why we strive to make your shopping experience as effortless and enjoyable as possible. With
       easyCart, you can shop with confidence, knowing that you're getting the best products at the best prices.</p>
-    <img src="https://via.placeholder.com/500" class="img-fluid rounded mx-auto d-block" alt="Why Choose Us Image">
+    <img src="<?php echo URLROOT; ?>/img/about-us.jpg" class="img-fluid rounded mx-auto d-block" alt="Why Choose Us Image">
   </div>
 </section>
 
@@ -34,10 +34,10 @@
             <div class="carousel-inner">
                 <!-- Add partner logos as carousel items -->
                 <div class="carousel-item active">
-                    <img src="partner1.jpg" class="d-block mx-auto img-thumbnail" alt="Partner Logo 1" style="width: 150px;">
+                    <img src="<?php echo URLROOT; ?>/img/about-us.jpg" class="d-block mx-auto img-thumbnail" alt="Partner Logo 1" style="width: 150px;">
                 </div>
                 <div class="carousel-item">
-                    <img src="partner2.jpg" class="d-block mx-auto img-thumbnail" alt="Partner Logo 2" style="width: 150px;">
+                    <img src="<?php echo URLROOT; ?>/img/about-us.jpg" class="d-block mx-auto img-thumbnail" alt="Partner Logo 2" style="width: 150px;">
                 </div>
                 <!-- Add more carousel items as needed -->
             </div>
