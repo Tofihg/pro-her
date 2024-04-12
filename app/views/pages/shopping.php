@@ -8,9 +8,10 @@
 
     foreach ($products as $product) {
       ?>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <div class="card product-card">
-        <img src='<?php echo "/../../../public/img/products/" . $product->image; ?>' class="card-img-top" alt="<?php echo $product->name; ?>">
+          <img src=" <?php echo URLROOT ?>\img\products\<?php echo $product->image; ?>" class="card-img-top"
+            alt="<?php echo $product->name; ?>" with="150" height="300">
           <div class="card-body">
             <h5 class="card-title"><?php echo $product->name; ?></h5>
             <p class="card-text">Price: $<?php echo $product->price; ?></p>
