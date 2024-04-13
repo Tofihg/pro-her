@@ -81,4 +81,23 @@ class Product
             return false;
         }
     }
+
+    public function placeOrder($data)
+    {
+        // Prepare SQL query
+        $this->db->query('INSERT INTO cart (user_id, product_id, quantity) VALUES (:user_id, :product_id, :quantity)');
+
+        // Bind values
+        $this->db->bind(':user_id', $data['user_id']);
+        $this->db->bind(':product_id', $data['product_id']);
+        $this->db->bind(':quantity', $data['quantity']);
+
+        // Execute the query
+        if ($this->db->execute()) {
+            return true; // Insertion successful
+        } else {
+            return false; // Insertion failed
+        }
+    }
+
 }

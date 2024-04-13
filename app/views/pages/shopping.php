@@ -1,4 +1,5 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<?php flash('order_message'); ?>
 <div class="container">
   <h1 class="mt-5 mb-4">Products</h1>
   <div class="row">
@@ -16,11 +17,7 @@
             <h5 class="card-title"><?php echo $product->name; ?></h5>
             <p class="card-text">Price: $<?php echo $product->price; ?></p>
             <!-- Add other product information here -->
-            <form action="<?php echo URLROOT; ?>/pages/addToCart" method="GET">
-              <!-- Include any input fields or hidden fields you need here -->
-              <input type="hidden" name="productId" value="<?php echo $product->productId; ?>">
-              <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
-            </form>
+            <button class="btn btn-primary addToCartBtn" data-product-id="<?php echo $product->productId; ?>">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -29,6 +26,34 @@
     ?>
   </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.addToCartBtn').click(function () {
+            var productId = $(this).data('product-id');
+            addToCart(productId);
+        });
+        
+        function addToCart(productId) {
+            $.ajax({
+                type: 'GET',
+                url: '<?php echo URLROOT; ?>/pages/addToCart',
+                data: { productId: productId },
+                success: function (response) {
+                  window.location.reload();
+                    // Optionally, do something after successful addition to cart
+                },
+                error: function (xhr, status, error) {
+                    console.error('Request failed. Status: ' + status + ', Error: ' + error);
+                    // Optionally, handle error
+                }
+            });
+        }
+    });
+</script>
+
+
 
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>

@@ -21,7 +21,8 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT; ?>/users/cart">
+                    
+                    <a class="nav-link" href="<?php echo URLROOT; ?>/pages/cart">
                         Cart
                         <?php if (count($_SESSION['products']) != 0)
                             echo count($_SESSION['products'])
